@@ -1,16 +1,14 @@
-
-
 public class StatisticService {
-    public int totalAmount(int[] amount) {
-        int sum = 0;
-        for (int sale : amount) {
+    public long totalAmount(int[] amount) {
+        long sum = 0;
+        for (long sale : amount) {
             sum += sale;
         }
         return (sum);
     }
 
 
-    public int findAverage(int[] sales) {
+    public long findAverage(int[] sales) {
         if (sales.length == 0) {
             return 0;
         }
@@ -40,8 +38,8 @@ public class StatisticService {
     }
 
 
-    public int averageMin(int[] sales) {
-        int averMin = findAverage(sales);
+    public long averageMin(int[] sales) {
+        long averMin = findAverage(sales);
         int count = 0;
         for (int sale : sales) {
             if (sale < averMin) {
@@ -52,8 +50,8 @@ public class StatisticService {
     }
 
 
-    public int averageMax(int[] sales) {
-        int averMax = findAverage(sales);
+    public long averageMax(int[] sales) {
+        long averMax = findAverage(sales);
         int count = 0;
         for (int sale : sales) {
             if (sale >= averMax) {
