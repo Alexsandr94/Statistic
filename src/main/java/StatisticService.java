@@ -1,5 +1,5 @@
 public class StatisticService {
-    public long totalAmount(int[] amount) {
+    public long totalAmount(long[] amount) {
         long sum = 0;
         for (long sale : amount) {
             sum += sale;
@@ -8,7 +8,7 @@ public class StatisticService {
     }
 
 
-    public long findAverage(int[] sales) {
+    public long findAverage(long[] sales) {
         if (sales.length == 0) {
             return 0;
         }
@@ -38,10 +38,10 @@ public class StatisticService {
     }
 
 
-    public long averageMin(int[] sales) {
+    public long averageMin(long[] sales) {
         long averMin = findAverage(sales);
         int count = 0;
-        for (int sale : sales) {
+        for (long sale : sales) {
             if (sale < averMin) {
                 count++;
             }
@@ -50,10 +50,10 @@ public class StatisticService {
     }
 
 
-    public long averageMax(int[] sales) {
+    public long averageMax(long[] sales) {
         long averMax = findAverage(sales);
         int count = 0;
-        for (int sale : sales) {
+        for (long sale : sales) {
             if (sale >= averMax) {
                 count++;
             }
