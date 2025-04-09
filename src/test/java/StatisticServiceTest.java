@@ -30,8 +30,8 @@ public class StatisticServiceTest {
         StatisticService Service = new StatisticService();
 
         int[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expectedMonth = 5;
-        long actualMonth = Service.maxSales(month);
+        int expectedMonth = 5;
+        int actualMonth = Service.maxSales(month);
         Assertions.assertEquals(expectedMonth, actualMonth);
     }
 
@@ -40,8 +40,8 @@ public class StatisticServiceTest {
         StatisticService Service = new StatisticService();
 
         int[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expectedMonth = 8;
-        long actualMonth = Service.minSales(month);
+        int expectedMonth = 8;
+        int actualMonth = Service.minSales(month);
         Assertions.assertEquals(expectedMonth, actualMonth);
     }
 

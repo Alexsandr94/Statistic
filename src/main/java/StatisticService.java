@@ -38,7 +38,7 @@ public class StatisticService {
     }
 
 
-    public long averageMin(long[] sales) {
+    public int averageMin(long[] sales) {
         long averMin = findAverage(sales);
         int count = 0;
         for (long sale : sales) {
@@ -50,7 +50,7 @@ public class StatisticService {
     }
 
 
-    public long averageMax(long[] sales) {
+    public int averageMax(long[] sales) {
         long averMax = findAverage(sales);
         int count = 0;
         for (long sale : sales) {
